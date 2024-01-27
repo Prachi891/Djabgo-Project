@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% load static %}
+
+<html> 
+<body>
+    <head> 
+          <link rel="stylesheet" href="{% static 'style.css'%}"> 
+    </head>
+
+    {% block body %}
+        <h1> this is contact page </h1>
+        <img src="{% static 'download.png' %}">
+    
+    {% endblock %}
+
+
+
+</body>
+</html>

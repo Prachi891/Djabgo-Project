@@ -1,0 +1,20 @@
+{% load static %}
+
+<html>
+<h1>This is information page</h1> 
+
+<head>  <link rel="stylesheet" href="{% static 'style.css'%}"> </head>
+{% comment %} <body> <p>helooo its prachi</p>
+     
+ <p> back to <a href="/main">main</a></p>
+<p>here is contact link to join us <a href="/contact">contact</a></p>
+<p> click here <a href="/prachi">prachi</a></p> 
+      {% endcomment %}
+<h1> {{mymemeber.firstname}}  {{mymember.lastname}}
+     {{mymember.rollno}}--- {{mymember.phoneno}}
+
+<p>Phone :{{mymember.phoneno}}</p>
+<a class='btn btn-warning' href="update/{{mymember.id}}">update</a>
+<a class='btn btn-warning' href="delete/{{mymember.id}}">delete</a>
+</body>
+</html>
